@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomButton: UIButton {
+class CustomButton: CustomButtonRadius {
     
     //MARK: - Init
     override init(frame: CGRect) {
@@ -22,7 +22,7 @@ class CustomButton: UIButton {
     
     /// update button's attributes
     private func updateButton() {
-        self.layer.cornerRadius = 18
+        self.layer.cornerRadius = cornerRadius
         self.titleLabel?.font = R.font.jostMedium(size: 16)
         self.setTitleColor(.white, for: .normal)
         self.backgroundColor = UIColor.buttonColor

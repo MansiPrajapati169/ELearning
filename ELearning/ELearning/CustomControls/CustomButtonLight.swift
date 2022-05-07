@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CustomButtonLight: UIButton {
-    
+class CustomButtonLight: CustomButtonRadius {
+
     //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +31,9 @@ class CustomButtonLight: UIButton {
             }
             else {
                 self.setTitleColor(UIColor.textColorDark, for: .normal)
+                self.layer.borderWidth = 1
+                self.layer.borderColor = UIColor.buttonBorderColor?.cgColor
+                self.backgroundColor = UIColor.buttonBackground
             }
         }
     }

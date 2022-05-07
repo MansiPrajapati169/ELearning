@@ -7,12 +7,8 @@
 
 import UIKit
 
-class CustomPasswordTextField: CustomTextField {
+class PasswordTextField: CustomTextField {
     
-    //MARK: - variables
-    private var imageRightPadding: CGFloat = -25
-    
-    //MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -22,8 +18,7 @@ class CustomPasswordTextField: CustomTextField {
         rightIcon()
     }
     
-    ///for setting rightIcon in TextField
-    private func rightIcon() {
+    public func rightIcon() {
         let passwordButton = UIButton()
         passwordButton.tintColor = UIColor.gray
         passwordButton.setImage(UIImage(systemName: "eye"), for: .normal)
@@ -34,6 +29,7 @@ class CustomPasswordTextField: CustomTextField {
         self.rightViewMode = .always
         self.rightView?.backgroundColor = UIColor.black
         self.rightView = passwordButton
+
     }
     
     @objc func onEyeButtonClicked(_ sender: UIButton) {
@@ -41,7 +37,7 @@ class CustomPasswordTextField: CustomTextField {
         self.isSecureTextEntry = sender.isSelected
     }
     
-    //MARK: - Override Methods
+    var imageRightPadding: CGFloat = -25
     override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         let rect = super.rightViewRect(forBounds: bounds)
         return rect.inset(by: UIEdgeInsets(top: 0, left:imageRightPadding,bottom:0,right:0))

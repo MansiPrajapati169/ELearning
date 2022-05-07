@@ -13,4 +13,7 @@ extension UIColor {
     static let textColorDark = R.color.buttonTextColorDark()
     static let placeHolderColor = R.color.placeHolderColor() ?? UIColor.gray
     static let labelH3Color = R.color.labelH3Color()
+    static let segmentLightColor = R.color.segmentLight()
+    static let buttonBackground = R.color.background()
+    static let buttonBorderColor = R.color.borderColor()
 }
