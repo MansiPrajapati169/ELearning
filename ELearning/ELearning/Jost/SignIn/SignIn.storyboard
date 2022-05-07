@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lUj-Pa-eUA">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WBB-bd-Hhk">
+            <objects>
+                <viewController id="lUj-Pa-eUA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N5q-4H-CG0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxR-aD-ag5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSG-T6-ud8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="757.66666666666663"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M7M-Z9-4Ac">
+                                                <rect key="frame" x="24" y="49" width="327" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="cDv-Gl-RHY"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Sign In"/>
+                                                    <segment title="Sign Up"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-nr-2dh" customClass="CustomLabelH1" customModule="ELearning" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="136" width="327" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good to see you again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVW-Gm-zl5" customClass="CustomLabelH3" customModule="ELearning" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="162.33333333333334" width="327" height="20.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="IBE-QT-ve8">
+                                                <rect key="frame" x="24" y="225.66666666666663" width="327" height="168"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HgC-40-ymY" customClass="CustomTextField" customModule="ELearning" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="72"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="72" id="zRa-Cu-kA2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Message"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9mE-Gh-PXS" customClass="CustomPasswordTextField" customModule="ELearning" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="96.000000000000028" width="327" height="72"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="Unlock"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uw0-3T-A5y" customClass="CustomButtonLight" customModule="ELearning" customModuleProvider="target">
+                                                <rect key="frame" x="236" y="409.66666666666669" width="115" height="30"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Forgot password">
+                                                    <color key="titleColor" red="0.43179291489999999" green="0.46428149940000002" blue="0.48454535009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBlack" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isForgotPassword" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-YQ-3kE" customClass="CustomButton" customModule="ELearning" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="471.66666666666669" width="327" height="64.000000000000057"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="PTF-ZT-PBS"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zES-5d-m80">
+                                                <rect key="frame" x="24" y="580.66666666666663" width="327" height="21"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 4" translatesAutoresizingMaskIntoConstraints="NO" id="fP6-3f-Xpj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="21"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or continue with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-4Q-R0U" customClass="CustomLabelRegular" customModule="ELearning" customModuleProvider="target">
+                                                        <rect key="frame" x="90.666666666666671" y="0.0" width="142.33333333333331" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector 5" translatesAutoresizingMaskIntoConstraints="NO" id="ahf-UH-vkd">
+                                                        <rect key="frame" x="245" y="0.0" width="82" height="21"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9I8-ug-QMU"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-mg-hAh">
+                                                <rect key="frame" x="24" y="641.66666666666663" width="327" height="24"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jv-OE-tRg" customClass="CustomButtonLight" customModule="ELearning" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="153" height="24"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                                                        <state key="normal" title="Facebook" image="Vector"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBlack" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyQ-oM-HGT" customClass="CustomButtonLight" customModule="ELearning" customModuleProvider="target">
+                                                        <rect key="frame" x="174" y="0.0" width="153" height="24"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                                                        <state key="normal" title="Google" image="flat-color-icons_google"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBlack" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zES-5d-m80" firstAttribute="top" secondItem="LA6-YQ-3kE" secondAttribute="bottom" constant="45" id="7Z0-Um-O2s"/>
+                                            <constraint firstItem="5TD-mg-hAh" firstAttribute="leading" secondItem="zES-5d-m80" secondAttribute="leading" id="8ba-GB-gYI"/>
+                                            <constraint firstItem="zES-5d-m80" firstAttribute="leading" secondItem="LA6-YQ-3kE" secondAttribute="leading" id="CUt-gK-BNa"/>
+                                            <constraint firstItem="IBE-QT-ve8" firstAttribute="top" secondItem="XVW-Gm-zl5" secondAttribute="bottom" constant="43" id="Hca-C5-Gxh"/>
+                                            <constraint firstItem="8ie-nr-2dh" firstAttribute="top" secondItem="M7M-Z9-4Ac" secondAttribute="bottom" constant="41" id="Iod-c0-QTR"/>
+                                            <constraint firstAttribute="bottom" secondItem="5TD-mg-hAh" secondAttribute="bottom" constant="92" id="Kfk-Q7-JVS"/>
+                                            <constraint firstAttribute="trailing" secondItem="M7M-Z9-4Ac" secondAttribute="trailing" constant="24" id="Kos-Yz-oUg"/>
+                                            <constraint firstItem="zES-5d-m80" firstAttribute="trailing" secondItem="LA6-YQ-3kE" secondAttribute="trailing" id="L0J-I5-Oxf"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ie-nr-2dh" secondAttribute="trailing" constant="24" id="Pfj-tA-j8H"/>
+                                            <constraint firstItem="XVW-Gm-zl5" firstAttribute="trailing" secondItem="8ie-nr-2dh" secondAttribute="trailing" id="Rcb-ua-2kb"/>
+                                            <constraint firstItem="M7M-Z9-4Ac" firstAttribute="leading" secondItem="LSG-T6-ud8" secondAttribute="leading" constant="24" id="Tm1-Kq-e0c"/>
+                                            <constraint firstItem="LA6-YQ-3kE" firstAttribute="leading" secondItem="IBE-QT-ve8" secondAttribute="leading" id="X7u-gf-ntN"/>
+                                            <constraint firstItem="Uw0-3T-A5y" firstAttribute="top" secondItem="IBE-QT-ve8" secondAttribute="bottom" constant="16" id="dIM-Sx-aW2"/>
+                                            <constraint firstItem="IBE-QT-ve8" firstAttribute="leading" secondItem="XVW-Gm-zl5" secondAttribute="leading" id="fJe-xM-9QB"/>
+                                            <constraint firstItem="8ie-nr-2dh" firstAttribute="leading" secondItem="LSG-T6-ud8" secondAttribute="leading" constant="24" id="gL7-eQ-TeU"/>
+                                            <constraint firstItem="5TD-mg-hAh" firstAttribute="top" secondItem="zES-5d-m80" secondAttribute="bottom" constant="40" id="hsz-ZD-0cl"/>
+                                            <constraint firstItem="XVW-Gm-zl5" firstAttribute="top" secondItem="8ie-nr-2dh" secondAttribute="bottom" constant="6" id="izB-eq-3EY"/>
+                                            <constraint firstItem="LA6-YQ-3kE" firstAttribute="top" secondItem="Uw0-3T-A5y" secondAttribute="bottom" constant="32" id="nf9-zn-UFP"/>
+                                            <constraint firstItem="IBE-QT-ve8" firstAttribute="trailing" secondItem="XVW-Gm-zl5" secondAttribute="trailing" id="osx-aT-DYu"/>
+                                            <constraint firstItem="LA6-YQ-3kE" firstAttribute="trailing" secondItem="IBE-QT-ve8" secondAttribute="trailing" id="qLd-C4-OyO"/>
+                                            <constraint firstItem="Uw0-3T-A5y" firstAttribute="trailing" secondItem="IBE-QT-ve8" secondAttribute="trailing" id="qlx-wg-ikm"/>
+                                            <constraint firstItem="5TD-mg-hAh" firstAttribute="trailing" secondItem="zES-5d-m80" secondAttribute="trailing" id="r7i-lN-oTz"/>
+                                            <constraint firstItem="XVW-Gm-zl5" firstAttribute="leading" secondItem="8ie-nr-2dh" secondAttribute="leading" id="rOx-pd-Znk"/>
+                                            <constraint firstItem="M7M-Z9-4Ac" firstAttribute="top" secondItem="LSG-T6-ud8" secondAttribute="top" constant="49" id="xNX-LR-9wz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LSG-T6-ud8" secondAttribute="bottom" id="AVp-GM-T66"/>
+                                    <constraint firstItem="LSG-T6-ud8" firstAttribute="width" secondItem="hxR-aD-ag5" secondAttribute="width" id="Gbd-Zv-sV6"/>
+                                    <constraint firstItem="LSG-T6-ud8" firstAttribute="top" secondItem="hxR-aD-ag5" secondAttribute="top" id="N0C-Iv-KGd"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSG-T6-ud8" secondAttribute="trailing" id="Y4e-2R-Wcf"/>
+                                    <constraint firstItem="LSG-T6-ud8" firstAttribute="leading" secondItem="hxR-aD-ag5" secondAttribute="leading" id="oyE-PN-aaY"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4nk-Kh-38O"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Hcc-Vq-u1Z"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QBf-qh-cYm"/>
+                        <constraints>
+                            <constraint firstItem="hxR-aD-ag5" firstAttribute="top" secondItem="N5q-4H-CG0" secondAttribute="top" id="3e6-iU-KtG"/>
+                            <constraint firstAttribute="bottom" secondItem="hxR-aD-ag5" secondAttribute="bottom" id="9Sl-y6-Aaw"/>
+                            <constraint firstItem="QBf-qh-cYm" firstAttribute="trailing" secondItem="hxR-aD-ag5" secondAttribute="trailing" id="ANx-z8-T9d"/>
+                            <constraint firstItem="hxR-aD-ag5" firstAttribute="leading" secondItem="QBf-qh-cYm" secondAttribute="leading" id="B0q-Y4-V19"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSO-rG-39D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Message" width="20" height="20"/>
+        <image name="Unlock" width="20" height="20"/>
+        <image name="Vector" width="24" height="24"/>
+        <image name="Vector 4" width="69" height="1"/>
+        <image name="Vector 5" width="69" height="1"/>
+        <image name="flat-color-icons_google" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
