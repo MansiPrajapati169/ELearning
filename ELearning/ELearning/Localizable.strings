@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  ELearning
+
+  Created by Mansi Prajapati on 04/05/22.
+  
+*/
+"forgotPassword" = "Forgot password";
+"userRegisterd" = "User Registered";
+"userLoginSucessful" = "User Login Successful";
