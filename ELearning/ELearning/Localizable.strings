@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  ELearning
+
+  Created by Mansi Prajapati on 04/05/22.
+  
+*/
+"forgotPassword" = "Forgot password";
+"userRegisterd" = "User Registered";
+"userLoginSucessful" = "User Login Successful";
+"about" = "Hey! My name is Tywin Lanisteo see more a english teacher from Toronto, Canada. I've been animating in Adobe After Hey! My name is Tywin Lanisteo and I'm a english teacher from Toronto, Canada. I've been animating in Adobe After";
+"seeMore" = "See more";
+"seeLess" = "See less";
+"subTitle" = "English Teacher";
+"title" = "Tywin Lanister";
+"invalidEmail" = "Enter valid email";
+"requiredEmail" = "Email Required";
+"shortPassword" = "Password is too short";
+"requiredName" = "Username required";
+"requiredPassword" = "Password required";
