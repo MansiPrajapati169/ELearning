@@ -8,18 +8,18 @@
 import UIKit
 
 class CustomButtonLight: UIButton {
-    
+
     //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         updateButtonLight()
-    }
-    
+   }
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         updateButtonLight()
     }
-    
+
     //MARK: - IBInspectable
     @IBInspectable var isForgotPassword: Bool = false {
         didSet {

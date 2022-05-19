@@ -42,16 +42,15 @@ class CustomTextField: UITextField {
     //MARK: - IBInspectable
     @IBInspectable var leftImage: UIImage? {
         didSet {
-            updateTextField()
+            updateView()
         }
     }
     
-    ///for upadting textField
-    func updateTextField() {
-        let placeholderStr = placeholder ?? ""
-        if let image = leftImage {
-            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+    func updateView() {
+        if let image = leftImage
+        {
             leftViewMode = UITextField.ViewMode.always
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
             imageView.tintColor = color
@@ -62,6 +61,7 @@ class CustomTextField: UITextField {
             leftView = nil
         }
         self.layer.cornerRadius = 18
+        let placeholderStr = placeholder ?? ""
         attributedPlaceholder = NSAttributedString(string: placeholderStr, attributes: [NSAttributedString.Key.foregroundColor: placeholderColor as Any])
     }
 }
