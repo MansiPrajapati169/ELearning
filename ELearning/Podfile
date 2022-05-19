@@ -6,6 +6,7 @@ target 'ELearning' do
   use_frameworks!
   # Pods for ELearning
 pod 'R.swift'
+pod 'TPKeyboardAvoidingSwift'
   target 'ELearningTests' do
     inherit! :search_paths
     # Pods for testing
@@ -13,6 +14,5 @@ pod 'R.swift'
 
   target 'ELearningUITests' do
     # Pods for testing
-
   end
 end

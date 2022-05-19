@@ -17,6 +17,13 @@
 		4614DD78281D0B06009E71C5 /* ELearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4614DD77281D0B06009E71C5 /* ELearningUITests.swift */; };
 		4614DD7A281D0B06009E71C5 /* ELearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4614DD79281D0B06009E71C5 /* ELearningUITestsLaunchTests.swift */; };
 		4614DD8A281D1562009E71C5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4614DD89281D1562009E71C5 /* CustomButton.swift */; };
+		4669564D28364D82009E030E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669564C28364D82009E030E /* R.generated.swift */; };
+		469D797328364CE0008CF144 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D796F28364CE0008CF144 /* OnboardingCollectionViewCell.swift */; };
+		469D797428364CE0008CF144 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469D797028364CE0008CF144 /* Onboarding.storyboard */; };
+		469D797528364CE0008CF144 /* OnboradingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D797128364CE0008CF144 /* OnboradingModel.swift */; };
+		469D797628364CE0008CF144 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D797228364CE0008CF144 /* OnboardingViewController.swift */; };
+		469D797A28364CEE008CF144 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D797828364CEE008CF144 /* Constant.swift */; };
+		469D797B28364CEE008CF144 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469D797928364CEE008CF144 /* Helper.swift */; };
 		46ABC7CE2829531300D4B9F2 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46ABC7BB2829531200D4B9F2 /* Poppins-Black.ttf */; };
 		46ABC7CF2829531300D4B9F2 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46ABC7BC2829531200D4B9F2 /* OFL.txt */; };
 		46ABC7D02829531300D4B9F2 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46ABC7BD2829531200D4B9F2 /* Poppins-SemiBoldItalic.ttf */; };
@@ -44,7 +51,6 @@
 		46DA5C4C28200235008D00FD /* CustomButtonLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA5C4B28200235008D00FD /* CustomButtonLight.swift */; };
 		46DA5C4E28200D75008D00FD /* CustomPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA5C4D28200D75008D00FD /* CustomPasswordTextField.swift */; };
 		46ED1017281D4A2A00E515DE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED1016281D4A2A00E515DE /* CustomTextField.swift */; };
-		46F9CBCE28228551008BDAF6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F9CBCB28228478008BDAF6 /* R.generated.swift */; };
 		46FED77B28252CB300843EAA /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46FED76928252CB100843EAA /* Jost-ExtraBold.ttf */; };
 		46FED77C28252CB300843EAA /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46FED76A28252CB100843EAA /* Jost-ExtraBoldItalic.ttf */; };
 		46FED77D28252CB300843EAA /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46FED76B28252CB200843EAA /* Jost-ExtraLightItalic.ttf */; };
@@ -101,6 +107,13 @@
 		4614DD77281D0B06009E71C5 /* ELearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELearningUITests.swift; sourceTree = "<group>"; };
 		4614DD79281D0B06009E71C5 /* ELearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4614DD89281D1562009E71C5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4669564C28364D82009E030E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		469D796F28364CE0008CF144 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		469D797028364CE0008CF144 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		469D797128364CE0008CF144 /* OnboradingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboradingModel.swift; sourceTree = "<group>"; };
+		469D797228364CE0008CF144 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		469D797828364CEE008CF144 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		469D797928364CEE008CF144 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		46ABC7BB2829531200D4B9F2 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		46ABC7BC2829531200D4B9F2 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		46ABC7BD2829531200D4B9F2 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -128,7 +141,6 @@
 		46DA5C4B28200235008D00FD /* CustomButtonLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonLight.swift; sourceTree = "<group>"; };
 		46DA5C4D28200D75008D00FD /* CustomPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordTextField.swift; sourceTree = "<group>"; };
 		46ED1016281D4A2A00E515DE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		46F9CBCB28228478008BDAF6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		46FED76928252CB100843EAA /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
 		46FED76A28252CB100843EAA /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		46FED76B28252CB200843EAA /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -188,7 +200,7 @@
 		4614DD4A281D0B04009E71C5 = {
 			isa = PBXGroup;
 			children = (
-				46F9CBCB28228478008BDAF6 /* R.generated.swift */,
+				4669564C28364D82009E030E /* R.generated.swift */,
 				4614DD55281D0B04009E71C5 /* ELearning */,
 				4614DD6C281D0B06009E71C5 /* ELearningTests */,
 				4614DD76281D0B06009E71C5 /* ELearningUITests */,
@@ -211,6 +223,8 @@
 		4614DD55281D0B04009E71C5 /* ELearning */ = {
 			isa = PBXGroup;
 			children = (
+				469D797728364CEE008CF144 /* Common */,
+				469D796E28364CE0008CF144 /* OnBoarding */,
 				464636502826304B007B6AD7 /* Fonts */,
 				4614DD88281D14F5009E71C5 /* CustomControls */,
 				4614DD56281D0B04009E71C5 /* AppDelegate.swift */,
@@ -264,6 +278,26 @@
 				46FED78D28252CB600843EAA /* Jost */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		469D796E28364CE0008CF144 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				469D796F28364CE0008CF144 /* OnboardingCollectionViewCell.swift */,
+				469D797028364CE0008CF144 /* Onboarding.storyboard */,
+				469D797128364CE0008CF144 /* OnboradingModel.swift */,
+				469D797228364CE0008CF144 /* OnboardingViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		469D797728364CEE008CF144 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				469D797828364CEE008CF144 /* Constant.swift */,
+				469D797928364CEE008CF144 /* Helper.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		46ABC7E12829531600D4B9F2 /* Poppins */ = {
@@ -489,6 +523,7 @@
 				46ABC7DA2829531300D4B9F2 /* Poppins-ExtraBold.ttf in Resources */,
 				46ABC7D22829531300D4B9F2 /* Poppins-ThinItalic.ttf in Resources */,
 				46FED78728252CB300843EAA /* Jost-Black.ttf in Resources */,
+				469D797428364CE0008CF144 /* Onboarding.storyboard in Resources */,
 				46FED78A28252CB300843EAA /* Jost-Italic.ttf in Resources */,
 				46ABC7DC2829531300D4B9F2 /* Poppins-Bold.ttf in Resources */,
 			);
@@ -637,18 +672,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469D797328364CE0008CF144 /* OnboardingCollectionViewCell.swift in Sources */,
 				46DA5C4E28200D75008D00FD /* CustomPasswordTextField.swift in Sources */,
 				4614DD8A281D1562009E71C5 /* CustomButton.swift in Sources */,
+				469D797A28364CEE008CF144 /* Constant.swift in Sources */,
 				4614DD5B281D0B04009E71C5 /* ViewController.swift in Sources */,
+				469D797528364CE0008CF144 /* OnboradingModel.swift in Sources */,
 				46CDC169282294EA004C9634 /* Color.swift in Sources */,
 				4614DD57281D0B04009E71C5 /* AppDelegate.swift in Sources */,
+				4669564D28364D82009E030E /* R.generated.swift in Sources */,
+				469D797B28364CEE008CF144 /* Helper.swift in Sources */,
+				469D797628364CE0008CF144 /* OnboardingViewController.swift in Sources */,
 				46DA5C1E281FE526008D00FD /* CustomLabelH1.swift in Sources */,
 				46DA5C4C28200235008D00FD /* CustomButtonLight.swift in Sources */,
 				46DA5C48281FF987008D00FD /* CustomLabelH3.swift in Sources */,
 				4614DD59281D0B04009E71C5 /* SceneDelegate.swift in Sources */,
 				46ED1017281D4A2A00E515DE /* CustomTextField.swift in Sources */,
 				46DA5C4A282000E2008D00FD /* CustomLabelRegular.swift in Sources */,
-				46F9CBCE28228551008BDAF6 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

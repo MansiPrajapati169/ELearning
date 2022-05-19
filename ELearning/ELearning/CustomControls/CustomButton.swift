@@ -13,8 +13,8 @@ class CustomButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         updateButton()
-    }
-    
+   }
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         updateButton()
