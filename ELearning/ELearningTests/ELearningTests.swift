@@ -10,24 +10,68 @@ import XCTest
 
 class ELearningTests: XCTestCase {
 
+    //MARK: - Variables
+    var signUpViewModel: SignUpViewModel!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        signUpViewModel = SignUpViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
+        signUpViewModel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_Name_Is_Empty() throws {
+        XCTAssertFalse(
+            signUpViewModel.validateUserInput (
+                signupModel: SignupModel(name: "", email: "mansi@gmail.com", password: "Mansi@Jimin7")
+            ),
+            "Name is empty"
+        )
     }
-
+    
+    func test_Email_Is_Empty() throws {
+        XCTAssertFalse(
+            signUpViewModel.validateUserInput (
+                signupModel: SignupModel(name: "mansi", email: "", password: "Mansi@Jimin7")
+            ),
+            "Email is empty"
+        )
+    }
+    
+    func test_Password_Is_Empty() throws {
+        XCTAssertFalse(
+            signUpViewModel.validateUserInput (
+                signupModel: SignupModel(name: "mansi", email: "mansi@gmail.com", password: "")
+            ),
+            "Password is empty"
+        )
+    }
+    
+    func test_Password_Is_Short() throws {
+        XCTAssertFalse(
+            signUpViewModel.validateUserInput (
+                signupModel: SignupModel(name: "mansi", email: "mansi@gmail.com", password: "Jimin")
+            ),
+            "Password is short"
+        )
+    }
+    
+    func test_Valid_Credentials() throws {
+         XCTAssert(
+            signUpViewModel.validateUserInput(
+                 signupModel: SignupModel(name: "mansi", email: "mansi@gmail.com", password: "Mansi@Jimin7")),
+             "Credentials are valid"
+         )
+     }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
